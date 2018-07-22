@@ -1,13 +1,13 @@
 package com.demo.weatherservice.model.openWeatherMap;
 
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WeatherInformation {
 
-    @SerializedName("main")
+    @JsonProperty("main")
     private String title;
 
-    @SerializedName("description")
+    @JsonProperty("description")
     private String description;
 
     public String getTitle() {

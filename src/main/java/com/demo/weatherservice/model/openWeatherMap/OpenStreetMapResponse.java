@@ -1,15 +1,15 @@
 package com.demo.weatherservice.model.openWeatherMap;
 
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
 public class OpenStreetMapResponse {
 
-    @SerializedName("main")
+    @JsonProperty("main")
     private MetereologicalDetails metereologicalDetails;
 
-    @SerializedName("weather")
+    @JsonProperty("weather")
     private List<WeatherInformation> weatherInformations;
 
     public MetereologicalDetails getMetereologicalDetails() {

@@ -1,15 +1,15 @@
 package com.demo.weatherservice.model.openWeatherMap;
 
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.math.BigDecimal;
 
 public class MetereologicalDetails {
 
-    @SerializedName("temp")
+    @JsonProperty("temp")
     private BigDecimal temperatute;
 
-    @SerializedName("pressure")
+    @JsonProperty("pressure")
     private BigDecimal pressure;
 
     public BigDecimal getTemperatute() {
