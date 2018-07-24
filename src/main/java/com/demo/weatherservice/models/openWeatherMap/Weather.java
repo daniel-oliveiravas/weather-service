@@ -10,6 +10,11 @@ public class Weather {
     @JsonProperty("description")
     private String fullDescription;
 
+    public Weather() {
+        this.shortDescription = "";
+        this.fullDescription = "";
+    }
+
     public String getShortDescription() {
         return shortDescription;
     }

@@ -1,6 +1,6 @@
 package com.demo.weatherservice.controllers;
 
-import com.demo.weatherservice.models.openWeatherMap.OpenWeatherResponse;
+import com.demo.weatherservice.models.SimpleWeatherInformation;
 import com.demo.weatherservice.service.interfaces.WeatherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +17,7 @@ public class WeatherController {
   }
 
   @RequestMapping("/weather")
-  public ResponseEntity<OpenWeatherResponse> getWeatherByCityName(@RequestParam String city) {
+  public ResponseEntity<SimpleWeatherInformation> getWeatherByCityName(@RequestParam String city) {
     return ResponseEntity.ok(weatherService.getWeather(city));
   }
 }
