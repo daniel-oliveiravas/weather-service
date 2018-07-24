@@ -7,24 +7,29 @@ import java.math.BigDecimal;
 public class MetereologicalDetails {
 
     @JsonProperty("temp")
-    private BigDecimal temperatute;
+    private Double temperatute;
 
     @JsonProperty("pressure")
-    private BigDecimal pressure;
+    private Double pressure;
 
-    public BigDecimal getTemperatute() {
+    public MetereologicalDetails(Double temperatute, Double pressure) {
+        this.temperatute = temperatute;
+        this.pressure = pressure;
+    }
+
+    public Double getTemperatute() {
         return temperatute;
     }
 
-    public void setTemperatute(BigDecimal temperatute) {
+    public void setTemperatute(Double temperatute) {
         this.temperatute = temperatute;
     }
 
-    public BigDecimal getPressure() {
+    public Double getPressure() {
         return pressure;
     }
 
-    public void setPressure(BigDecimal pressure) {
+    public void setPressure(Double pressure) {
         this.pressure = pressure;
     }
 }
