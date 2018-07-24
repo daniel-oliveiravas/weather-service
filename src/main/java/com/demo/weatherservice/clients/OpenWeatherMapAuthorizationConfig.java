@@ -1,4 +1,4 @@
-package com.demo.weatherservice.feign;
+package com.demo.weatherservice.clients;
 
 import feign.RequestInterceptor;
 import org.springframework.beans.factory.annotation.Value;

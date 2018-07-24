@@ -1,4 +1,4 @@
-package com.demo.weatherservice.feign;
+package com.demo.weatherservice.clients;
 
 import com.demo.weatherservice.model.openWeatherMap.OpenStreetMapResponse;
 import org.springframework.cloud.openfeign.FeignClient;
