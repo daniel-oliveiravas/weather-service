@@ -1,7 +1,7 @@
 package com.demo.weatherservice.service;
 
 import com.demo.weatherservice.clients.OpenWeatherMapClient;
-import com.demo.weatherservice.models.openWeatherMap.OpenStreetMapResponse;
+import com.demo.weatherservice.models.openWeatherMap.OpenWeatherResponse;
 import com.demo.weatherservice.service.interfaces.WeatherService;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     @Cacheable("weather")
-    public OpenStreetMapResponse getWeather(String city) {
+    public OpenWeatherResponse getWeather(String city) {
         return openWeatherClient.getWeather(city);
     }
 }

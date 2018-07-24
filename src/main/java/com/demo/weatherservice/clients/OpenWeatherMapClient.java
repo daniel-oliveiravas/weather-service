@@ -1,6 +1,6 @@
 package com.demo.weatherservice.clients;
 
-import com.demo.weatherservice.models.openWeatherMap.OpenStreetMapResponse;
+import com.demo.weatherservice.models.openWeatherMap.OpenWeatherResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,5 +13,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface OpenWeatherMapClient {
 
   @GetMapping("/weather?q={city}")
-  OpenStreetMapResponse getWeather(@PathVariable("city") String city);
+  OpenWeatherResponse getWeather(@PathVariable("city") String city);
 }

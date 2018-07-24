@@ -4,13 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class OpenStreetMapResponse {
+public class OpenWeatherResponse {
 
     @JsonProperty("main")
     private MetereologicalDetails metereologicalDetails;
 
     @JsonProperty("weather")
-    private List<WeatherInformation> weatherInformations;
+    private List<Weather> weathers;
 
     public MetereologicalDetails getMetereologicalDetails() {
         return metereologicalDetails;
@@ -20,11 +20,11 @@ public class OpenStreetMapResponse {
         this.metereologicalDetails = metereologicalDetails;
     }
 
-    public List<WeatherInformation> getWeatherInformations() {
-        return weatherInformations;
+    public List<Weather> getWeathers() {
+        return weathers;
     }
 
-    public void setWeatherInformations(List<WeatherInformation> weatherInformations) {
-        this.weatherInformations = weatherInformations;
+    public void setWeathers(List<Weather> weathers) {
+        this.weathers = weathers;
     }
 }
