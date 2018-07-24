@@ -5,9 +5,13 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "open-weather-service", url = "${openWeatherMap.url}")
+@FeignClient(
+    name = "open-weather-service",
+    url = "${openWeatherMap.url}",
+    configuration = OpenWeatherMapAuthorizationConfig.class
+)
 public interface OpenWeatherMapClient {
 
-    @GetMapping("/weather?q={city}&appid=a6fc39296f8df7e2a1ac6e70a0d60a3e")
-    OpenStreetMapResponse getWeather(@PathVariable("city") String city);
+  @GetMapping("/weather?q={city}")
+  OpenStreetMapResponse getWeather(@PathVariable("city") String city);
 }
