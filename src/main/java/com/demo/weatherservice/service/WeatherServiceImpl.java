@@ -1,7 +1,7 @@
 package com.demo.weatherservice.service;
 
 import com.demo.weatherservice.clients.OpenWeatherMapClient;
-import com.demo.weatherservice.model.openWeatherMap.OpenStreetMapResponse;
+import com.demo.weatherservice.models.openWeatherMap.OpenStreetMapResponse;
 import com.demo.weatherservice.service.interfaces.WeatherService;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

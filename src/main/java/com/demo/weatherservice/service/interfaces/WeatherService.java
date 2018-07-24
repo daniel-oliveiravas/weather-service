@@ -1,6 +1,6 @@
 package com.demo.weatherservice.service.interfaces;
 
-import com.demo.weatherservice.model.openWeatherMap.OpenStreetMapResponse;
+import com.demo.weatherservice.models.openWeatherMap.OpenStreetMapResponse;
 
 public interface WeatherService {
 

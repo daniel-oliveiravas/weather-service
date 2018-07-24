@@ -1,4 +1,4 @@
-package com.demo.weatherservice.model.openWeatherMap;
+package com.demo.weatherservice.models.openWeatherMap;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

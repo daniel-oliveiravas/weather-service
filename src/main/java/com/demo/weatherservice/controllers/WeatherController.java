@@ -1,6 +1,6 @@
 package com.demo.weatherservice.controllers;
 
-import com.demo.weatherservice.model.openWeatherMap.OpenStreetMapResponse;
+import com.demo.weatherservice.models.openWeatherMap.OpenStreetMapResponse;
 import com.demo.weatherservice.service.interfaces.WeatherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
