@@ -2,34 +2,35 @@ package com.demo.weatherservice.models.openWeatherMap;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.math.BigDecimal;
-
 public class MetereologicalDetails {
 
-    @JsonProperty("temp")
-    private Double temperatute;
+  @JsonProperty("temp")
+  private Double temperatute;
 
-    @JsonProperty("pressure")
-    private Double pressure;
+  @JsonProperty("pressure")
+  private Double pressure;
 
-    public MetereologicalDetails(Double temperatute, Double pressure) {
-        this.temperatute = temperatute;
-        this.pressure = pressure;
-    }
+  public MetereologicalDetails() {
+  }
 
-    public Double getTemperatute() {
-        return temperatute;
-    }
+  public MetereologicalDetails(Double temperatute, Double pressure) {
+    this.temperatute = temperatute;
+    this.pressure = pressure;
+  }
 
-    public void setTemperatute(Double temperatute) {
-        this.temperatute = temperatute;
-    }
+  public Double getTemperatute() {
+    return temperatute;
+  }
 
-    public Double getPressure() {
-        return pressure;
-    }
+  public void setTemperatute(Double temperatute) {
+    this.temperatute = temperatute;
+  }
 
-    public void setPressure(Double pressure) {
-        this.pressure = pressure;
-    }
+  public Double getPressure() {
+    return pressure;
+  }
+
+  public void setPressure(Double pressure) {
+    this.pressure = pressure;
+  }
 }
